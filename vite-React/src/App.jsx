@@ -1,10 +1,11 @@
-
+import Test from "./test.jsx"
 
 function App() {
-  
-
   return (
-   <h1>React first Project</h1>
+    <><Test/>
+   <h1>Hello</h1></>
+    // error, export only 1 element
+   //* Hence use div or <> </>(fragment)
   )
 }
 
