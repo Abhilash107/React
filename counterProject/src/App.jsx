@@ -8,9 +8,16 @@ function App() {
   let [counter, myCounter] = useState(0)
 
   const addValue = ()=>{
-    if(counter>=20) alert("Counter can't be greater than 20")
+    if(counter>19){
+      alert("Counter can't be greater than 20")
+      return;
+    }
+      
+    //myCounter(counter+1)// to increase the counter by 1
+    myCounter(counter => counter+1)
+    myCounter(counter => counter+1)
+    myCounter(counter => counter+1)
     
-    myCounter(counter+1)
   }
 
   const subtractValue = ()=>{
