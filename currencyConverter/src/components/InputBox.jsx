@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useId} from "react";
 // * imp
 function InputBox({
     label,
@@ -11,14 +11,19 @@ function InputBox({
     currencyDisable = false,
     className = "",// css from the user
 }) {
-   
+    //* used to generate unique IDs that are stable across renders
+    //* useful when you need unique IDs for elements, like form inputs, that may need to associate labels with input fields, or for components that require unique keys.
+    const amountInputId = useId()
     return (
         <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
             <div className="w-1/2">
-                <label  className="text-black/40 mb-2 inline-block">
+                
+                <label htmlFor={amountInputId} className="text-black/40 mb-2 inline-block">
                     {label}
                 </label>
                 <input
+                
+                id={amountInputId}
                     className="outline-none w-full bg-transparent py-1.5"
                     type="number"
                     placeholder="Amount"
