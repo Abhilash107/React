@@ -1,6 +1,6 @@
 import React from "react";
 //* props
-function Card({username, btnTxt}){
+function Card({username, btnTxt="Explore"}){
 
     console.log(username);
     
@@ -21,7 +21,7 @@ function Card({username, btnTxt}){
       type="button"
       class="mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
     >
-      {btnTxt || "Explore"}
+      {btnTxt}
     </button>
   </div>
 </div>

@@ -10,13 +10,13 @@ function App() {
   //   username: "Abhilash",
   //   age: 21
   // }
-  // let newArr = [1, 2, 3]
+  //let newArr = [1, 2, 3]
 
   return (
     <>
       <h1 className='bg-green-500 p-4 rounded-3xl'>Hello</h1>
-      <Card username="papun" btnTxt = "More" />
-      <Card  username="Abhilash"  />
+      <Card username="Papun" btnTxt = "More..." />
+      <Card  username="Abhilash" btnTxt="Explore more"  />
 
     </>
   )
