@@ -29,7 +29,7 @@ function App() {
 
   // Generate password function
   // As this method gets called after each generation,
-  // we use //*useCallback(fn , dependencies) 
+  // we use //* useCallback(fn , dependencies) 
   // allows you to memoize a function(Optimize)
 
   const passwordGenerator = useCallback(()=>{
