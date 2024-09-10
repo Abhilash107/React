@@ -48,6 +48,8 @@ export default function Header() {
                                     Home
                                 </NavLink>
                             </li>
+
+                            
                             <li>
                                 <NavLink to="/about"
                                     className={(isActive) =>
@@ -58,6 +60,7 @@ export default function Header() {
                                 </NavLink>
                             </li>
 
+
                             <li>
                                 <NavLink to="/Contact"
                                     className={(isActive) =>
@@ -67,6 +70,7 @@ export default function Header() {
                                     Contact
                                 </NavLink>
                             </li>
+
 
                             <li>
                                 <NavLink to="/github"

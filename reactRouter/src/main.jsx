@@ -32,26 +32,24 @@ import Github, {githubInfoLoader} from './components/Github/Github.jsx'
 //     ]
 //   }
 // ])
-// alt method
+
+
+
+// alt method 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout/>} >//* /
-
-      <Route path='' element={<Home/>}/>     
-      <Route path='about' element={<About/>}/>
-
-      {/* <Route path='about' element={<About/>}> //* /about
-      <Route path='abhilash'/> //* /about/abhilash
-      </Route> */}
+    <Route path='/' element={<Layout />}>
+      <Route path='' element={<Home />}/>
+      <Route path='about' element={<About />}/>
+      <Route path='contact' element={<Contact />}/>
+      <Route path='user/:id' element={<User />}/>
       
-      <Route path='contact' element={<Contact/>}/> //* /contact
-      <Route path='user/:id' element={<User/>}/> //* /user/:id
       <Route 
-      loader={githubInfoLoader}
-      // use loader for optimized fetching data
+      loader={ githubInfoLoader }
       path='github' 
-      element={<Github/>}
-      />
+      element={<Github />}/>
+
 
     </Route>
   )
