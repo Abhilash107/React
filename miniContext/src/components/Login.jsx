@@ -5,10 +5,11 @@ function Login(){
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
 
-    // this setUser is used in props in UserContextProvider file
+    // this setUser is defined in UserContextProvider file
+    // like a reference
     const {setUser} = useContext(UserContext)
 
-    //* Sending the data
+    // Sending the data
     const handleSubmit = (e)=>{
         e.preventDefault()
         setUser({username, password})
