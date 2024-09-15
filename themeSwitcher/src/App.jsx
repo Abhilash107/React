@@ -5,7 +5,7 @@ import ThemeBtn from './components/ThemeBtn'
 import Card from './components/Card'
 
 function App() {
-  
+
   const [themeMode, setThemeMode] = useState("light")
   //to add functionality to the pros/values in ThemeProvider,
   //define function's name same as the props name
@@ -20,7 +20,7 @@ function App() {
 
   //actual change in themes
 
-  useEffect(  ()=>{
+  useEffect( ()=>{
 
     document.querySelector('html').classList.remove("light", "dark")
     document.querySelector('html').classList.add(themeMode)

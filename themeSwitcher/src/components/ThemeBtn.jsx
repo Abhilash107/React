@@ -2,10 +2,13 @@ import React from "react";
 import useTheme from "../contexts/theme";
 
 export default function ThemeBtn() {
-    const {themeMode, lightTheme, darkTheme } = useTheme()
+    // custom hook defined in theme.js file
+    const {themeMode, lightTheme, darkTheme} = useTheme()
 
     const onChangeBtn = (e)=>{
+        // get the targeted event
         const darkModeStatus = e.currentTarget.checked
+        // Logic
         if(darkModeStatus){
             darkTheme()
         }else{
