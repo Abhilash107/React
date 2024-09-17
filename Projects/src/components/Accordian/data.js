@@ -1,4 +1,4 @@
-const dataArray = [
+export const data = [
     {
       id: 1,
       qns: "What is React?",
