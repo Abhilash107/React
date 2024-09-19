@@ -6,8 +6,8 @@ export default function Accordian(){
     const [selected, setSelected] = useState(null)
     // for btn purpose
     const [enableMultiSelection, setEnableMultiSelection] = useState(false)
-    const [multiple, setMultiple] = useState([])
 
+    const [multiple, setMultiple] = useState([])
 
 
     const handleSingleSelection = (getCurrentId)=>{
@@ -22,7 +22,6 @@ export default function Accordian(){
         else copyMultiple.splice(findIndexOfCurrentId, 1)
         
         setMultiple(copyMultiple)
-       
     }
 
     return (
@@ -39,7 +38,8 @@ export default function Accordian(){
                             : () => handleSingleSelection(dataItem.id)} className="title">
                             <h3>{dataItem.qns}</h3>
                             <span>+</span>
-                        </div>  
+                        </div> 
+                         
                         {
                             enableMultiSelection ?
                             multiple.indexOf(dataItem.id) !== -1 &&
