@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 } */
+
+
+.active{
+  color: rgb(110, 220, 37);
+}
+.inactive{
+  color: black;
+}
