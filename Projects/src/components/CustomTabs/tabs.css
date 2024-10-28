@@ -1,0 +1,44 @@
+
+
+
+.wrapper{
+    padding: 5px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+
+.tab-item{
+    display: inline-flex;
+    width: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+    background-color: chocolate;
+    border-radius: 10px;
+}
+
+.tab-item.active{
+    border-color: black;
+    background: limegreen;
+
+}
+.content{
+    border: 1px black solid;
+    outline: none;   
+    width: 200px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
