@@ -11,6 +11,8 @@ import menus from './components/NavigationMenu/data'
 import QRCodeGenerator from './components/QRCode/QrCode'
 import ThemeToggle from './components/ThemeToggle/ThemeToggle'
 import Scroll from './components/ScrollIndicator/Scroll'
+import CustomTabs from './components/CustomTabs/CustomTabs'
+import TabTest from './components/CustomTabs/TabTest'
 
 function App() {
 
@@ -26,6 +28,7 @@ function App() {
       {/* <QRCodeGenerator/> */}
       {/* <ThemeToggle/> */}
       {/* <Scroll url={'https://dummyjson.com/products?limit=100'}/> */}
+      <TabTest/>
       
     </div>
 
