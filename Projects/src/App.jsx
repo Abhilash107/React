@@ -13,6 +13,8 @@ import ThemeToggle from './components/ThemeToggle/ThemeToggle'
 import Scroll from './components/ScrollIndicator/Scroll'
 import CustomTabs from './components/CustomTabs/CustomTabs'
 import TabTest from './components/CustomTabs/TabTest'
+import ModalPopUp from './components/ModalPopUp/ModalPopUp'
+import ModalTest from './components/ModalPopUp/ModalTest'
 
 function App() {
 
@@ -28,8 +30,8 @@ function App() {
       {/* <QRCodeGenerator/> */}
       {/* <ThemeToggle/> */}
       {/* <Scroll url={'https://dummyjson.com/products?limit=100'}/> */}
-      <TabTest/>
-      
+      {/* <TabTest/> */}
+      <ModalTest/>
     </div>
 
   )
